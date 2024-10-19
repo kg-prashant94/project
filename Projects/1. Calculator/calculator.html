@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="calculator.css">
+  <title>My Calculator</title>
+</head>
+<body>
+  <div id="calculator">
+    <input type="text" id="display" readonly>
+    <div class="button-container">
+    
+      <button class="button" onclick="crntDisplay = '';document.querySelector('#display').value = crntDisplay">c</button>
+
+      <button class="button" onclick="crntDisplay += '1';document.querySelector('#display').value = crntDisplay">1</button>
+
+      <button class="button" onclick="crntDisplay = crntDisplay + '2';
+      document.querySelector('#display').value = crntDisplay;">2</button>
+
+      <button class="button" onclick="crntDisplay += '+';
+      document.querySelector('#display').value = crntDisplay;">+</button>
+
+      <button class="button" onclick="crntDisplay += '3';
+      document.querySelector('#display').value = crntDisplay;">3</button>
+
+      <button class="button" onclick="crntDisplay += '4';
+      document.querySelector('#display').value = crntDisplay;">4</button>
+
+      <button class="button" onclick="crntDisplay += '-';
+      document.querySelector('#display').value = crntDisplay;">-</button>
+
+      <button class="button" onclick="crntDisplay += '5';
+      document.querySelector('#display').value = crntDisplay;">5</button>
+
+      <button class="button" onclick="crntDisplay += '6';
+      document.querySelector('#display').value = crntDisplay;">6</button>
+
+      <button class="button" onclick="crntDisplay += '*';
+      document.querySelector('#display').value = crntDisplay;">*</button>
+
+      <button class="button" onclick="crntDisplay += '7';
+      document.querySelector('#display').value = crntDisplay;">7</button>
+
+      <button class="button" onclick="crntDisplay += '8';
+      document.querySelector('#display').value = crntDisplay;">8</button>
+
+      <button class="button" onclick="crntDisplay += '/';
+      document.querySelector('#display').value = crntDisplay;">/</button>
+
+      <button class="button" onclick="crntDisplay = eval(crntDisplay);document.querySelector('#display').value = crntDisplay">=</button>
+
+      <button class="button" onclick="crntDisplay += '9';
+      document.querySelector('#display').value = crntDisplay;">9</button>
+
+      <button class="button" onclick="crntDisplay += '0';
+      document.querySelector('#display').value = crntDisplay;">0</button>
+
+      <button class="button" onclick="crntDisplay += '.';
+      document.querySelector('#display').value = crntDisplay;">.</button>
+
+      <button class="button" onclick="crntDisplay += '.';
+      document.querySelector('#display').value = crntDisplay;"></button>
+    </div>
+  </div>
+  
+  <script>
+    let crntDisplay = '';
+    document.querySelector('#display').value = crntDisplay;
+  </script>
+</body>
+</html>
